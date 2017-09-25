@@ -87,12 +87,14 @@ POST https://feeder.co/1/oauth2/token?
   grant_type=authorization_code&
   code=$CODE_HERE&
   redirect_uri=$REDIRECT_URI&
-  client_id=$CLIENT_ID
+  client_id=$CLIENT_ID&
+  client_secret=$CLIENT_SECRET
 ```
 
 - `$CODE_HERE` is the `?code=` from the previous step
 - `$REDIRECT_URI` must exactly match the URI from the previous step
 - `$CLIENT_ID` your client ID.
+- `$CLIENT_SECRET` your client secret.
 
 This will return a JSON response that looks like this:
 
